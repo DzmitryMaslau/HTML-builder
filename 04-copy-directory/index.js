@@ -16,8 +16,8 @@ fs.rm(dirCopy, {
         data.forEach(function(item) {
             if (item.isFile()) {
                 let pathItem = path.join(dir, item.name);
-                let pathItemDes = path.join(dirCopy, item.name);
-                fs.copyFile(pathItem, pathItemDes);}
+                let pathItemWay = path.join(dirCopy, item.name);
+                fs.copyFile(pathItem, pathItemWay);}
         });
     });
 });
